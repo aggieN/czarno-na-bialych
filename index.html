@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Description" content="Lekcje śpiewu i gry na pianinie - studio rozwoju muzycznego i promocji artystów.">
+         
+        <link rel="stylesheet" href="index.css">
+        <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+
+        <title>Czarno Na Białych</title>
+
+    </head>
+
+    <body>
+        <div class="wrapper">
+
+            <header class="header" id="Home">
+                <div class="header__background"></div>
+                <h1 class="header__title">Czarno na Białych</h1>
+                <div class="header__icons">
+                    <a href="https://www.facebook.com/CzarnoNaBialych/" target="_blank" rel="noreferrer"><img src="assets/socialmediaicons/facebook-32.png" class="header__icons__item" alt="facebook icon"></a>
+                    <a href="https://www.instagram.com/czarnonabialych_studio/" target="_blank" rel="noreferrer"><img src="assets/socialmediaicons/instagram-32.png" class="header__icons__item" alt="instagram icon"></a>
+                    <a href="https://www.youtube.com/channel/UCYjQwGcp8EyRgPhXmID6_5w" target="_blank" rel="noreferrer"><img src="assets/socialmediaicons/youtube-32.png" class="header__icons__item" alt="youtube icon"></a>
+                </div>
+    
+                <div class="header__logo">
+                    <figure class="header__figure"> 
+                        <picture>
+                            <source srcset="assets/img/CzarnoNaBialych.webp" type="image/webp">
+                            <source srcset="assets/img/CzarnoNaBialych.png" type="image/png"> 
+                            <img src="assets/img/CzarnoNaBialych.png" class="header__img" alt="czarno na białych">
+                        </picture> 
+                        
+                        <figcaption class="header__subtitles">
+                            <span class="header__subtitles-left">Studio rozwoju muzycznego</span>
+                            <span class="header__subtitles-right">i promocji artystów</span>
+                        </figcaption>   
+                    </figure>               
+                </div>
+    
+                
+                <button aria-label="Menu" class="hamburger">
+                    <span class="hamburger__box">
+                        <span class="hamburger__line"></span>
+                    </span>
+                </button>
+                
+                
+                <div class="piano">
+                    <nav>
+                        <ul>
+                            <li data-note="C" class="key key-white"><a class="nav__link" href="#Home">Home</a></li>
+                            <li data-note="Cis" class="key key-black"></li>
+                            <li data-note="D" class="key key-white"><a class="nav__link" href="#oNas">O nas</a></li>
+                            <li data-note="Dis" class="key key-black"></li>
+                            <li data-note="E" class="key key-white"><a class="nav__link" href="#metodyNauczania">Metody nauczania</a></li>
+                            <li data-note="F" class="key key-white"><a class="nav__link" href="#cenaSukcesu">Cena sukcesu</a></li>
+                            <li data-note="Fis" class="key key-black"></li>
+                            <li data-note="G" class="key key-white"><a class="nav__link" href="#strefaArtystow">Strefa artystów</a></li>
+                            <li data-note="Gis" class="key key-black"></li>
+                            <li data-note="A" class="key key-white"><a class="nav__link" href="#odbierzPrezent">Odbierz Prezent</a></li>
+                            <li data-note="Ais" class="key key-black"></li>
+                            <li data-note="H" class="key key-white"><a class="nav__link" href="#kontakt">Kontakt</a></li>
+                        </ul>
+                    </nav>
+                    <audio id="C" src="assets/piano-sounds/c.mp3"></audio>
+                    <audio id="Cis" src="assets/piano-sounds/cis.mp3"></audio>
+                    <audio id="D" src="assets/piano-sounds/d.mp3"></audio>
+                    <audio id="Dis" src="assets/piano-sounds/dis.mp3"></audio>
+                    <audio id="E" src="assets/piano-sounds/e.mp3"></audio>
+                    <audio id="F" src="assets/piano-sounds/f.mp3"></audio>
+                    <audio id="Fis" src="assets/piano-sounds/fis.mp3"></audio>
+                    <audio id="G" src="assets/piano-sounds/g.mp3"></audio>
+                    <audio id="Gis" src="assets/piano-sounds/gis.mp3"></audio>
+                    <audio id="A" src="assets/piano-sounds/a.mp3"></audio>
+                    <audio id="Ais" src="assets/piano-sounds/ais.mp3"></audio>
+                    <audio id="H" src="assets/piano-sounds/h.mp3"></audio>
+
+                    <div class="piano__switch">
+                        <label class="switch">
+                            <input type="checkbox" class="switch__input" id="switch">
+                            <span class="switch__slider"><img class="switch__img" src="assets/img/soundonoff.png" alt="ikona dźwięku"></span>
+                        </label>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+
+                <section id="oNas">
+
+                    <div class="about">
+                        <picture>
+                            <source srcset="assets/img/Arek-Borzdynski.webp" type="image/webp">
+                            <source srcset="assets/img/Arek-Borzdynski.jpg" type="image/jpeg"> 
+                            <img src="assets/img/Arek-Borzdynski.jpg" class="about__photo" alt="Arkadiusz Borzdynski">
+                        </picture>
+                        
+                        <div class="about__intro intro-arek">
+                            <h2 class="intro__title">Hej! Jestem Arek</h2>
+                            <div class="about__audio">
+                                <audio controls class="about__audio-box">
+                                    <source src="assets/reklama.mp3" type="audio/mp3">
+                                </audio>
+                            </div>
+                            <a href="#aboutArek" aria-label="Czytaj więcej na temat Arka" class="btn btn-white btn-arek">Czytaj więcej</a>
+                        </div>      
+                    </div>
+                        
+                    <div class="content about__content-arek is-hidden" id="aboutArek">
+                        <div class="content__box">
+                            <div class="content__text">
+                                <h3 class="content__text-heading">Znany jestem z tego, że...</h3>
+                                <p>śpiewam w musicalach, gram na pianinie i układam choreografie taneczne. To prawdziwa przyjemność móc robić to co się kocha, ale początki nie były łatwe. Pamiętam doskonale moment, gdy postanowiłem, że zostanę śpiewakiem musicalowym i całą żmudną i pełną niesamowitych historii drogę, którą przeszedłem, by móc realizować się na scenie. Ci, z którymi mam przyjemność pracować mówią też często, że umiem uczyć. Ogromną frajdę sprawia mi dzielenie się moją wiedzą z innymi. Jako pedagog pracuje już od 10 lat począwszy od nauki tańca po przez naukę śpiewu oraz gry na pianinie więc jestem tu po to, by przekazać Ci maksimum wiedzy jaką mam z zakresu:</p>
+                                <ul>
+                                    <li>kompetencji, które składają się na śpiew i poprawną emisję głosu</li>
+                                    <li>gry na instrumentach klawiszowych </li>
+                                    <li>plastyczności i odpowiedniej ekspresji ciała przy występach wokalnych</li>
+                                </ul>
+                            </div>
+                            <div class="content__box-picture">
+                                <picture>
+                                    <source srcset="assets/img/Arek-Borzdynski1.webp" type="image/webp">
+                                    <source srcset="assets/img/Arek-Borzdynski1.jpg" type="image/jpeg"> 
+                                    <img src="assets/img/Arek-Borzdynski1.jpg" class="content__img" alt="Arkadiusz Borzdynski">
+                                </picture>
+                            </div>  
+                        </div>
+
+                        <div class="notes">
+                            <hr class="notes__line notes__line-1">
+                            <hr class="notes__line notes__line-2">
+                            <hr class="notes__line notes__line-3">
+                            <hr class="notes__line notes__line-4">
+                            <hr class="notes__line notes__line-5">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-1" alt="music note">
+                            <img src="assets/img/iconsNuty/cwiercnuta.png" class="notes__item notes__item-2" alt="music note">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-3" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-4" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-5" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-6" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-7" alt="music note">
+                        </div>
+                                
+                        <div class="content__box">
+                            <div class="content__box-picture is-second">
+                                <picture>
+                                    <source srcset="assets/img/Arek-Borzdynski2.webp" type="image/webp">
+                                    <source srcset="assets/img/Arek-Borzdynski2.jpg" type="image/jpeg"> 
+                                    <img src="assets/img/Arek-Borzdynski2.jpg" class="content__img" alt="Arkadiusz Borzdynski">
+                                </picture>
+                            </div>
+                            <div class="content__text">
+                                <h3 class="content__text-heading">Śpiewać każdy może</h3>
+                                <p> Zdecydowałem się przekazać Ci całą moją wiedzę, z kilku powodów:
+                                Prosto z serca – kocham musicale! Uwielbiam śpiewać, tańczyć, występować na scenie oraz tworzyć własne kompozycje. A co Ty z tego będziesz miał? 😉</p><br>
+                                <ul>
+                                    <li>Chciałbym, abyś uniknął jak najwięcej błędów jakie może popełnić początkujący wokalista</li>
+                                    <li>Wiedza, którą mam nie jest jedynie teoretyczną, ale jako praktyk zawodowy uzupełniam ją z każdym kolejnym projektem</li>
+                                    <li>Nie wierzę w „jedną”  metodę dla wokalisty, nauczyłem się tak miksować techniki, byś mógł rozwinąć się dzięki ich łączeniu</li>
+                                    <li>Wiem jak trudno jest czasem uwierzyć w siebie i swoje możliwości – powiem Ci jak to zwalczać</li>
+                                    <li>Jestem nastawiony na Twoje postępy i czas, który mi dasz, wykorzystamy maksymalnie.</li>
+                                </ul><br>
+                                <p> Moją myślą przewodnią jest przekonanie że nie ma rzeczy niemożliwych.
+                                    Każdy może być tym, kim tylko zapragnie! 
+                                    I uwierz mi – <strong>ŚPIEWAĆ KAŻDY MOŻE!</strong>
+                                </p>
+                            </div>    
+                        </div>
+
+                        <div class="notes">
+                            <hr class="notes__line notes__line-1">
+                            <hr class="notes__line notes__line-2">
+                            <hr class="notes__line notes__line-3">
+                            <hr class="notes__line notes__line-4">
+                            <hr class="notes__line notes__line-5">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-1" alt="music note">
+                            <img src="assets/img/iconsNuty/cwiercnuta.png" class="notes__item notes__item-2" alt="music note">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-3" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-4" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-5" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-6" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-7" alt="music note">
+                        </div>
+
+                        <div class="content__box-wide">
+                            <div class="content__text content__text-wide">
+                                <h3 class="content__text-heading">Kocham występować na scenie</h3>
+                                <p>...a zaczęło się tak:</p> 
+                                <ul>
+                                    <li>Pierwsza profesjonalna produkcja -  to musical „Fame” wystawiany na deskach Mazowieckiego Teatru Muzycznego i Opery Szczecińskiej, gdzie zaistniałem także, jako choreograf.</li>
+                                    <li>Jako aktor - zadebiutowałem w musicalu „Tajemnica Tomka Sawyera” w roli Joe’go, wystawianym w Teatrze Miejskim w Lesznie, gdzie również byłem twórcą choreografii.</li>
+                                    <li>Dołączyłem do obsady musicalu „Gorączka Sobotniej Nocy” wystawianym na deskach Teatru Muzycznego w Gdyni, kreując rolę Bobby’ego C.</li>
+                                    <li>Miałem przyjemność grać w produkcji zagranicznej - w Niemieckim Teatrze Ückermarkische Bühnen Schwedt przy musicalu „Tamara”.</li>
+                                    <li>Rok 2019 -  dołączyłem do obsady musicalu „Jesus Christ Superstar” wystawianym w Teatrze Rampa w Warszawie, gdzie wcieliłem się w rolę Szymona Zeloty, jak i rok później tę samą rolę kreowałem w Teatrze Muzycznym w Łodzi.</li>
+                                    <li>Ważną produkcją dla mnie jest też „Śpiewak Jazzbandu” w reżyserii Wojciecha Kościelniaka w Teatrze Żydowskim w Warszawie, gdzie wykreowałem jedną z głównych postaci.</li>  
+                                </ul>  
+                            </div> 
+                            <div class="content__box-picture content__img-bottom"></div>    
+                        </div>
+
+                        <div class="notes">
+                            <hr class="notes__line notes__line-1">
+                            <hr class="notes__line notes__line-2">
+                            <hr class="notes__line notes__line-3">
+                            <hr class="notes__line notes__line-4">
+                            <hr class="notes__line notes__line-5">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-1" alt="music note">
+                            <img src="assets/img/iconsNuty/cwiercnuta.png" class="notes__item notes__item-2" alt="music note">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-3" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-4" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-5" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-6" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-7" alt="music note">
+                        </div>
+
+                        <div class="content__box">
+                            <div class="content__box-picture is-second">
+                                <picture>
+                                    <source srcset="assets/img/Arek-Borzdynski3.webp" type="image/webp">
+                                    <source srcset="assets/img/Arek-Borzdynski3.jpg" type="image/jpeg"> 
+                                    <img src="assets/img/Arek-Borzdynski3.jpg" class="content__img" alt="Arkadiusz Borzdynski">
+                                </picture>
+                            </div>
+                            <div class="content__text">
+                                <h3 class="content__text-heading">Gdzie się uczyłem:</h3>
+                                <ul>
+                                    <li>Uczyłem się w Szkole Muzycznej im F. Chopina w Pile w klasie fortepianu, gdzie ukończyłem 1 i 2 stopień muzyczny.</li>
+                                    <li>Wykształcenie wyższe oraz tytuł magistra sztuki – zdobyłem je na Akademii Muzycznej im. S. Moniuszki w Gdańsku na wydziałach: Wokalno-Aktorskim o specjalności musical oraz na Wydziale Dyrygentury Chóralnej, Muzyki Kościelnej, Edukacji Artystycznej, Rytmiki i Jazzu o specjalności animacja kultury z arteterapią.</li>
+                                </ul>  
+                            </div>   
+                        </div>
+                        <div class="btn--is-hidden-arek btn--is-hidden">
+                            <a href="#oNas" aria-label="Zwiń sekcję o Arku" class="btn btn-white">Zwiń</a>
+                        </div>
+                        
+                    </div>
+        
+                    <div class="about about-aneta">
+                        <div class="about__intro">
+                            <h2 class="intro__title">Hej! Jestem Aneta</h2>
+                            <a href="#aboutAneta" aria-label="Czytaj więcej na temat Anety" class="btn btn-white btn-aneta">Czytaj więcej</a>
+                        </div>
+                        <picture>
+                            <source srcset="assets/img/Aneta-Pulawska.webp" type="image/webp">
+                            <source srcset="assets/img/Aneta-Pulawska.jpg" type="image/jpeg"> 
+                            <img src="assets/img/Aneta-Pulawska.jpg" class="about__photo" alt="Aneta Puławska">
+                        </picture>  
+                    </div>
+                    
+                    <div class="content about__content-aneta is-hidden" id="aboutAneta">
+                        <div class="content__box">
+                            <div class="content__box-picture is-second">
+                                <picture>
+                                    <source srcset="assets/img/Aneta-Pulawska1.webp" type="image/webp">
+                                    <source srcset="assets/img/Aneta-Pulawska1.jpg" type="image/jpeg"> 
+                                    <img src="assets/img/Aneta-Pulawska1.jpg" class="content__img" alt="Aneta Puławska">
+                                </picture>
+                            </div>  
+                            <div class="content__text">
+                                <h3 class="content__text-heading">Po pierwsze...</h3>
+                                <p>...i co dla Ciebie najważniejsze – jestem uczennicą Arka, kształcę swój głos pod jego kierunkiem przeszło pół roku i widzę postępy, jak nigdy dotąd. Należę do jednej z tych osób, którym ktoś kiedyś powiedział, że nie powinny śpiewać i ja niestety w to uwierzyłam na kilka lat. A szkoda, bo mój głos nabiera kształtów i kolorów. Spotkałam trenera, który najpierw uwierzył we mnie, bym później ja sama nabrała wiatru w żagle 😉</p><br>
+                                <p>Co robię w Studio?
+                                Jestem osobą, z którą kontaktujesz się gdy chcesz do nas dołączyć oraz:</p>
+                                <ul>
+                                    <li>Dowiedzieć się jak zapisać się na lekcję próbną</li>
+                                    <li>Zapoznać się z ofertą i wybrać dla siebie najlepszą opcję</li>
+                                    <li>Zwracać się z każdym pomysłem jaki masz dla siebie – burza mózgów zawsze wskazana!</li>
+                                    <li>Poplotkować w miłej atmosferze – jak mam czas to zawsze chętnie</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="notes">
+                            <hr class="notes__line notes__line-1">
+                            <hr class="notes__line notes__line-2">
+                            <hr class="notes__line notes__line-3">
+                            <hr class="notes__line notes__line-4">
+                            <hr class="notes__line notes__line-5">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-1" alt="music note">
+                            <img src="assets/img/iconsNuty/cwiercnuta.png" class="notes__item notes__item-2" alt="music note">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-3" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-4" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-5" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-6" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-7" alt="music note">
+                        </div>
+                                
+                        <div class="content__box">
+                            <div class="content__text">
+                                <h3 class="content__text-heading">Z zawodu</h3>
+                                    <p>jestem dziennikarzem, copywriterem i tancerką – a w studio szczególnie przyda mi się ta ostatnia kompetencja. Dlaczego?
+                                        Dzięki występom publicznym znalazłam sposób na to:</p>
+                                    <ul>
+                                        <li>Jak radzić sobie ze stresem i sprawić, by dodawał mi odwagi, a nie rujnował występ</li>
+                                        <li>Jak opanować drżące ciało i niespokojny głos by mógł ze mną współpracować</li>
+                                        <li>Jak reagować na bieżąco, gdy występ nie idzie po mojej myśli – bez paniki, lecz tak, że nikt się nie zorientuje</li>
+                                        <li>Jak odnaleźć w sobie drzemiące pokłady uporu w dążeniu do celu: odpowiedniej sylwetki i nastawienia psychicznego, by się nie poddawać</li>
+                                        <li>Jak być spójnym głosem i ciałem z tym, co chcę pokazać widzom</li>
+                                    </ul><br>
+                                    <p>Niejednokrotnie uczyłam kogoś powyższych sposobów – tajniki mogę zdradzić również Tobie 😊</p>
+                            </div>   
+                            <div class="content__box-picture">
+                                <picture>
+                                    <source srcset="assets/img/Aneta-Pulawska2.webp" type="image/webp">
+                                    <source srcset="assets/img/Aneta-Pulawska2.jpg" type="image/jpeg"> 
+                                    <img src="assets/img/Aneta-Pulawska2.jpg" class="content__img" alt="Aneta Puławska">
+                                </picture>
+                            </div> 
+                        </div>
+
+                        <div class="notes">
+                            <hr class="notes__line notes__line-1">
+                            <hr class="notes__line notes__line-2">
+                            <hr class="notes__line notes__line-3">
+                            <hr class="notes__line notes__line-4">
+                            <hr class="notes__line notes__line-5">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-1" alt="music note">
+                            <img src="assets/img/iconsNuty/cwiercnuta.png" class="notes__item notes__item-2" alt="music note">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-3" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-4" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-5" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-6" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-7" alt="music note">
+                        </div>
+
+                        <div class="content__box-wide">
+                            <div class="content__text content__text-wide">
+                                <h3 class="content__text-heading">Teatralnie</h3>
+                                    <p>Mimo, że nie skończyłam szkoły teatralnej, grałam w teatrze przez 3 lata, gdzie:<br>
+                                    Kształciłam się jako członek Autorskiej Sceny Teatralnej Klubu „ Oczko” w Ostrołęce pod okiem Wojtka Kraszewskiego – spektakle w których zagrałam: „Opera Panica”, „Dobrze”, „Ożenek”, spektakl plenerowy pt. „Mały Książę”, Spektakl plenerowy w 30. rocznicę wprowadzenia stanu wojennego pt. „Wroniec”.</p><br>
+                                        
+                                    <p>Mimo, że nie skończyłam szkoły tanecznej, od 6 lat tańczę w Grupie Estradowej Flame:
+                                        Mam na swoim koncie kilka ważniejszych występów:</p>
+                                    <ul>
+                                        <li>Spektakl "Burleska" w Olsztynie (lata 2014-2015) – tancerka/wokalistka, grany 6 krotnie - styl brodway</li>
+                                        <li>Spektakl „Alicja w Krainie Czarów” (rok 2016) – tancerka, rola solowa - spektakl muzyczny, grany 4 krotnie w Olsztyńskiej Filharmonii</li>
+                                        <li>Występ w programie World of Dance (rok 2018) tancerka/samba brazylijska, udział w półfinale</li>
+                                        <li>Pokazy gościnne w programie „Taniec z Gwiazdami” (rok 2016, 2019) – tancerka/samba brazylijska</li>
+                                        <li>Pokazy gościnne w telewizjach śniadaniowych – „DDTVN”, „Pytanie na Śniadanie”, ostatnio grudzień 2019</li>
+                                        <li>Ponad 300 pokazów z grupą na eventach w Polsce i za granicą (m.in. Hiszpania, Francja, Brazylia, Belgia, Niemcy, Włochy)</li>
+                                        <li>I to najfajniejsze: Tańczyłam na paradzie w czasie karnawału w Rio de Janeiro i na pewno to powtórzę 😉</li>
+                                    </ul>
+                            </div> 
+                            <div class="content__box-picture content__img-bottomAneta"></div>
+                            <div class="btn--is-hidden-aneta btn--is-hidden">
+                                <a href="#oNas" aria-label="Zwiń sekcję o Anecie" class="btn btn-white">Zwiń</a>
+                            </div>    
+                        </div>    
+                </section>
+        
+
+                <section id="metodyNauczania">
+                    <div class="tab__header">
+                        <h2 class="tab__title">Metody Nauczania</h2>    
+                    </div>
+                    <div class="tab__header-methods">
+                        <div class="tab--methods">
+                            <h3 class="tab__label">Wokal</h3>
+                            <a href="#vocal" aria-label="Czytaj więcej na temat metod nauczania wokalu" class="btn btn-white btn-vocal">Czytaj więcej</a>
+                        </div>
+            
+                        <div class="tab--methods">
+                            <h3 class="tab__label">Pianino</h3>
+                            <a href="#piano" aria-label="Czytaj więcej na temat metod nauczania pianina" class="btn btn-white btn-piano">Czytaj więcej</a>
+                        </div>
+                    </div>
+        
+                    <div class="content content--methods-vocal is-hidden">
+                        <div class="content__box content--methods-1" id="vocal">
+                            <div class="content__text content__text-wide">
+                                <h3 class="content__text-heading">Czytaj, jeśli...</h3>   
+                                    <ul>
+                                        <li>chcesz nauczyć się śpiewać</li>
+                                        <li>chcesz nauczyć się poprawnie oddychać</li>
+                                        <li>chcesz popracować nad swoim głosem emisyjnie</li>
+                                        <li>chcesz poprawić dykcję i artykulację</li>
+                                        <li>jesteś ciekawy co potrafi Twój głos!</li>
+                                    </ul><br>
+                                    <p>Aby pracować nad twoim głosem na bieżąco będę proponował Ci różnego rodzaju metody. Chcę zaszczepić w Tobie dobre praktyki, które ma każdy dobry wokalista. W mojej opinii jest to osoba, która nie tylko jest indywidualna, ale potrafi poruszać się po różnych gatunkach muzyki. Tak, to możliwe 😉 Dlatego swoje metody nauczania dostosowuje indywidualnie do danego ucznia. Każdy głos jest wyjątkowy i każdy w danym momencie potrzebuje czegoś innego.</p>
+                            </div>
+                        </div>
+
+                        <div class="notes">
+                            <hr class="notes__line notes__line-1">
+                            <hr class="notes__line notes__line-2">
+                            <hr class="notes__line notes__line-3">
+                            <hr class="notes__line notes__line-4">
+                            <hr class="notes__line notes__line-5">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-1" alt="music note">
+                            <img src="assets/img/iconsNuty/cwiercnuta.png" class="notes__item notes__item-2" alt="music note">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-3" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-4" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-5" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-6" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-7" alt="music note">
+                        </div>
+                                
+                        <div class="content__box content--methods-2">
+                            <div class="content__text content__text-wide">
+                                <h3 class="content__text-heading">Metody</h3>
+                                <ul>
+                                    <li>SLS – technika opierająca się na wyjściu do śpiewania z mowy, poszukiwaniu jak najbardziej naturalnego głosu</li>
+                                    <li>Belting & Twang – stosuję je do rozbudowywanie skali oraz alikwotów dźwięków (harmonicznie najbardziej brzmiącego głosu)</li>
+                                    <li>Lax vox - czyli jak śpiewać utrzymując swobodę niezależnie od wysokości dwięku – byś już nigdy nie był zmęczony po śpiewaniu</li>
+                                    <li>Jak odnaleźć w sobie drzemiące pokłady uporu w dążeniu do celu: odpowiedniej sylwetki i nastawienia psychicznego, by się nie poddawać</li>
+                                    <li>Wariacje, w których wykorzystuję łączenia tych technik i gestów wspomagających wydobywanie dźwięku oraz wyobraźnię</li>
+                                </ul><br>
+                                <p>Niezależnie na jakim etapie wokalnym jesteś szczególną uwagę zwracam na wrażliwość muzyczną oraz muzyczne aspekty wykonawcze takie jak: dynamika czy artykulacja.</p>
+                            </div>    
+                        </div>
+
+                        <div class="notes">
+                            <hr class="notes__line notes__line-1">
+                            <hr class="notes__line notes__line-2">
+                            <hr class="notes__line notes__line-3">
+                            <hr class="notes__line notes__line-4">
+                            <hr class="notes__line notes__line-5">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-1" alt="music note">
+                            <img src="assets/img/iconsNuty/cwiercnuta.png" class="notes__item notes__item-2" alt="music note">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-3" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-4" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-5" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-6" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-7" alt="music note">
+                        </div>
+
+                        <div class="content__box content--methods-phase" id="phaseVocal">
+                            <div class="content__text content__text-wide">
+                                <h3 class="content__text-heading">Jak wygląda przykładowy cykl nauczania?</h3>
+                                <div class="container--methods-phase">
+                                    <a href="#phaseVocal" class="btn btn-white btn-phase btn-phase-vocal1">Etap I</a>
+                                    <a href="#phaseVocal1" class="btn btn-white btn-phase btn-phase-vocal2">Etap II</a>
+                                    <a href="#phaseVocal2" class="btn btn-white btn-phase btn-phase-vocal3">Etap III</a>
+                                    <a href="#phaseVocal3" class="btn btn-white btn-phase btn-phase-vocal4">Etap IV</a>
+                                </div>
+                                <div class="content--phase content--phase-vocal">
+                                    <div class="phase is-hidden" id="phaseVocal1">
+                                        <p><strong>ETAP 1: </strong>Na pierwszym spotkaniu pokazuję podstawowe ćwiczenia rozgrzewające aparat mowy, opowiadam o rezonatorach, o tym jak wydobywa się głos oraz o oddechu - czyli tak zwanym podparciu.</p>
+                                    </div>
+                                    <div class="phase is-hidden" id="phaseVocal2">
+                                        <p><strong>ETAP 2: </strong>Rozpoznanie. Słucham i staram się wychwycić z czym uczeń ma problem oraz na jakim jest etapie. Tutaj zaczyna się najdłuższa podróż, ponieważ zaczynamy pracować nad emisją, sprzężeniu głosu z oddechem oraz rozbudowujemy skalę głosu.</p>
+                                    </div>
+                                    <div class="phase is-hidden" id="phaseVocal3">
+                                        <p><strong>ETAP 3: </strong>Indywidualność - czyli poszukiwanie własnej barwy głosu, swojego repertuaru w którym najlepiej się czujesz. Moje zadanie tutaj to podpowiadanie, które Twoje pomysły najlepiej się z Tobą identyfikują i są zdrowe dla Twojego głosu.</p>
+                                    </div>
+                                    <div class="phase is-hidden" id="phaseVocal4">
+                                        <p><strong>ETAP 4: </strong>Uczeń poznaje różne figury wokalne, np. falset czy elementy śpiewu operowego oraz ozdobniki wokalne, np. riffy. Jest to moment, w którym sięgamy po utwory innych gatunków, uczeń poszukuje w sobie nowych ścieżek rozwoju w kierunku wszechstronności.</p>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+
+                        <div class="notes">
+                            <hr class="notes__line notes__line-1">
+                            <hr class="notes__line notes__line-2">
+                            <hr class="notes__line notes__line-3">
+                            <hr class="notes__line notes__line-4">
+                            <hr class="notes__line notes__line-5">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-1" alt="music note">
+                            <img src="assets/img/iconsNuty/cwiercnuta.png" class="notes__item notes__item-2" alt="music note">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-3" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-4" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-5" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-6" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-7" alt="music note">
+                        </div>
+
+                        <div class="content__box content--methods-3">
+                            <div class="content__text content__text-wide">
+                                <h3 class="content__text-heading">WAŻNE</h3>
+                                <ul>
+                                    <li>Pamiętaj, że niezależnie od tego na jakim etapie jesteś, ważne jest dla mnie Twoje rozluźnienie i swoboda.</li>
+                                    <li>Nauka śpiewu to nasza wspólna podróż - jeżeli któreś z ćwiczeń do Ciebie nie trafi, nie będziesz czuł rozwoju lub będziesz miał inne wątpliwości - POWIEDZ MI O TYM!</li>
+                                    <li>Jestem otwarty na Twój feedback - razem będziemy szukać drogi do celu.</li>
+                                </ul> 
+                            </div>   
+                        </div>
+                        <div class="btn--is-hidden-vocal btn--is-hidden">
+                            <a href="#metodyNauczania" aria-label="Zwiń sekcję o metodach nauczania wokalu" class="btn btn-white">Zwiń</a>
+                        </div>
+                    </div>
+
+                    <div class="content content--methods-piano is-hidden">
+                        <div class="content__box content--methods-4" id="piano">
+                            <div class="content__text content__text-wide">
+                                <h3 class="content__text-heading">Czytaj, jeśli...</h3>   
+                                <ul>
+                                    <li>chcesz uczyć się grać na instrumencie klawiszowym</li>
+                                    <li>marzy Ci się zagrać ulubioną piosenkę</li>
+                                    <li>chcesz nauczyć się grać z nut</li>
+                                    <li>kochasz pianino, ale nie wiesz jak się do niego zabrać!</li>
+                                </ul><br>
+                                <h4>Tak jak w śpiewie tak i na instrumencie!</h4><br>
+                                <p>Wszechstronność to najbardziej pożądana cecha dzisiejszego muzyka. Każdy uczeń będzie mógł u mnie zmierzyć się zarówno z klasyką (utwory klasyczne, nuty oraz notacja muzyczna) jak i z utworami muzyki rozrywkowej. Szczególną uwagę zwracam na jakość oraz technikę. 
+                                To właśnie dobra technika pomaga pianiście odzwierciedlić swoje emocje na klawiaturze. Będziemy się uczyć wrażliwości na jakość dźwięków, dynamikę, kreatywność brzmienia.                                         Gra na instrumencie stanowi dobre uzupełnienie kształcenia wokalnego. Stajesz się wrażliwszy na czystość dźwięku, mniej fałszujesz śpiewając i sam dla siebie możesz tworzyć podkłady muzyczne do ćwiczeń. To wszystko powoduje Twoją samodzielność jako artysty. 
+                                </p>  
+
+                            </div>
+                        </div>
+                        <div class="notes">
+                            <hr class="notes__line notes__line-1">
+                            <hr class="notes__line notes__line-2">
+                            <hr class="notes__line notes__line-3">
+                            <hr class="notes__line notes__line-4">
+                            <hr class="notes__line notes__line-5">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-1" alt="music note">
+                            <img src="assets/img/iconsNuty/cwiercnuta.png" class="notes__item notes__item-2" alt="music note">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-3" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-4" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-5" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-6" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-7" alt="music note">
+                        </div>
+                                
+                        <div class="content__box content--methods-phase" id="phasePiano">
+                            <div class="content__text content__text-wide">
+                                <h3 class="content__text-heading">Jak wygląda przykładowy cykl nauczania?</h3>
+                                    <div class="container--methods-phase">
+                                        <a href="#phasePiano" class="btn btn-white btn-phase btn-phase-piano1">Etap I</a>
+                                        <a href="#phasePiano1" class="btn btn-white btn-phase btn-phase-piano2">Etap II</a>
+                                        <a href="#phasePiano2" class="btn btn-white btn-phase btn-phase-piano3">Etap III</a>
+                                        <a href="#phasePiano3" class="btn btn-white btn-phase btn-phase-piano4">Etap IV</a>
+                                    </div>
+                                    <div class="content--phase content--phase-piano">
+                                        <div class="phase is-hidden" id="phasePiano1">
+                                            <p><strong>ETAP 1: </strong>Na pierwszym spotkaniu opowiadam na jakiej zasadzie działa pianino. Jak wygląda jego budowa oraz jak powstaje dźwięk. Kolejnym krokiem jest zapoznanie się z klawiaturą oraz ciężarem dłoni. To bardzo istotny element. To właśnie od ciężaru twojej ręki zależy jakość wydobywania dźwięków. Wiedziałeś? 😉</p>
+                                        </div>
+                                        <div class="phase is-hidden" id="phasePiano2">
+                                            <p><strong>ETAP 2: </strong>Nie ma co czekać! Każdy chce jak najszybciej rozpocząć swoją przygodę z dźwiękiem! Uczymy się prawidłowego rozłożenia dłoni na klawiaturze, tak zwanego „palcowania” oraz zaczynamy grać gamy (czyli pochody dźwiękowe – zaczynając od prawej ręki, następnie lewej).</p>
+                                        </div>
+                                        <div class="phase is-hidden" id="phasePiano3">
+                                            <p><strong>ETAP 3: </strong>Łączymy obie dłonie!! Oczywiście nie będziemy grać tylko gam. Na jednej z pierwszych lekcji otrzymasz ode mnie utwór, który pomoże Ci rozpracować ten 88-klawiszowy instrument. Jeśli będziesz miał takie ambicje – nauczę Cię również grać z nut.</p>
+                                        </div>
+                                        <div class="phase is-hidden" id="phasePiano4">
+                                            <p><strong>Etap 4: </strong>Zaczynamy bawić się w akordami i pasażami Na tym etapie zaczniemy grać już trochę trudniejsze utwory.  Uczeń zaczyna coraz bardziej zwracać uwagę na jakość dźwięku oraz na inne środki wykonawcze takie jak dynamika, agogika, artykulacja, a także na  wrażliwość muzyczną. A ja jako nauczyciel wszystkiego tego pilnuję 😉</p>
+                                        </div>
+                                    </div>
+                            </div> 
+                        </div>
+                        <div class="notes">
+                            <hr class="notes__line notes__line-1">
+                            <hr class="notes__line notes__line-2">
+                            <hr class="notes__line notes__line-3">
+                            <hr class="notes__line notes__line-4">
+                            <hr class="notes__line notes__line-5">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-1" alt="music note">
+                            <img src="assets/img/iconsNuty/cwiercnuta.png" class="notes__item notes__item-2" alt="music note">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-3" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-4" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-5" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-6" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-7" alt="music note">
+                        </div>
+
+                        <div class="content__box content--methods-5">
+                            <div class="content__text content__text-wide">
+                                <h3 class="content__text-heading">WAŻNE</h3>
+                                <ul>
+                                    <li>Nie musimy przechodzić kolejno przez te kroki! Każdy z uczniów na starcie jest na innym etapie! Wolfgang Amadeusz Mozart, kiedy się urodził był na przykład na piątym - a tutaj nawet go nie ma 😉</li>
+                                    <li>Możemy też pracować na konkretnym utworze, jeśli marzy Ci się, by go zagrać. Po prostu powiedz mi o tym na początku spotkań. Przearanżujemy go tak, że dasz radę go zagrać!</li>
+                                </ul>       
+                            </div>   
+                        </div>
+                        <div class="btn--is-hidden-piano btn--is-hidden">
+                            <a href="#metodyNauczania" aria-label="Zwiń sekcję o metodach nauczania gry na pianinie" class="btn btn-white">Zwiń</a>
+                        </div>
+                    </div>
+                </section>
+        
+                <section id="cenaSukcesu">
+                    <div class="tab__header">
+                        <h2 class="tab__title">Cena sukcesu</h2>    
+                    </div>
+                    <div class="tab__header-pricing">
+                        <div class="tab--pricing">
+                            <h3 class="tab__label">Wokal</h3>
+                            <a href="#pricingVocal" aria-label="Czytaj więcej na temat cen lekcji wokalu" class="btn btn-white btn-wokal-prices">Czytaj więcej</a>
+                        </div>
+            
+                        <div class="tab--pricing">
+                            <h3 class="tab__label">Pianino</h3>
+                            <a href="#pricingPiano" aria-label="Czytaj więcej na temat cen lekcji gry na pianinie" class="btn btn-white btn-piano-prices">Czytaj więcej</a>
+                        </div>
+                    </div>
+                    
+        
+                    <div id="pricingVocal" class="pricing-vocal is-hidden">
+                        <div class="pricing__box">
+                            <div class="pricing__card">
+                                <div class="pricing__header">
+                                    <h2 class="pricing__title">Konsultacja</h2>
+                                    <span class="price">60 zł*</span>
+                                </div>
+                                <p class="pricing__text">Prowadzona przez Arka, rozmawiamy o Twoim głosie i preferencjach, robimy podstawowe ćwiczenia emisyjne, by zobaczyć od czego zacząć pracę. Poznajemy swoje wzajemne oczekiwania. Możesz wybrać czy chcesz się spotkać z Arkiem u nas w studio czy online.<br>
+                                    <br>
+                                    *Każda osoba może z tej opcji skorzystać jednorazowo.
+                                </p>
+                                <a href="#kontakt" aria-label="Zapisz się na lekcję" class="btn-pricing">Zgłoś się tutaj</a>    
+                            </div>
+                            <div class="pricing__card">
+                                <div class="pricing__header">
+                                    <h2 class="pricing__title">Lekcja wokalna 60 minut</h2>
+                                    <span class="price">120 zł</span>
+                                </div>
+                                <p class="pricing__text">Zajęcia prowadzone przez Arka wg. zaproponowanego cyklu nauczania w naszym studio (więcej informacji w zakładce <a href="#metodyNauczania" class="pricing__text-link"><strong>metody nauczania</strong></a>).</p>
+                                <a href="#kontakt" aria-label="Zapisz się na lekcję" class="btn-pricing">Zgłoś się tutaj</a>
+                            </div>
+                            <div class="pricing__card">
+                                <div class="pricing__header">
+                                    <h2 class="pricing__title">Lekcja wokalna ONLINE 60 minut</h2>
+                                    <span class="price">70 zł</span>
+                                </div>
+                                <p class="pricing__text">Zapraszamy Cię do realizowania lekcji poprzez platformę Zoom. Po Twoim zgłoszeniu się do nas i dokonaniu płatności ustalamy wspólnie datę i otrzymujesz od nas link dostępu i wszelkie informacje jak obchodzić się z narzędziem.</p>
+                                <a href="#kontakt" aria-label="Zapisz się na lekcję" class="btn-pricing">Zgłoś się tutaj</a>
+                            </div>   
+                            <div class="pricing__card">
+                                <div class="pricing__header">
+                                    <h2 class="pricing__title">Pakiet 4 lekcji wokalu po 60 minut</h2>
+                                    <span class="price">400 zł</span>
+                                </div>
+                                <p class="pricing__text">W abonamencie wychodzi taniej! Możesz wykupić od razu 4 lekcje i zyskać 80 zł. Lekcje prowadzone są przez Arka u nas w studio w Warszawie.</p>
+                                <a href="#kontakt" aria-label="Zapisz się na lekcję" class="btn-pricing">Zgłoś się tutaj</a>    
+                            </div>
+                            <div class="pricing__card">
+                                <div class="pricing__header">
+                                    <h2 class="pricing__title">Pakiet 4 lekcji wokalu ONLINE po 60 minut</h2>
+                                    <span class="price">240 zł</span>
+                                </div>
+                                <p class="pricing__text">W abonamencie wychodzi taniej! Możesz wykupić od razu 4 lekcje online i zyskać 40 zł. Lekcje prowadzone są przez Arka poprzez platformy: ZOOM, SKYPE, MESSENGER.</p>
+                                <a href="#kontakt" aria-label="Zapisz się na lekcję" class="btn-pricing">Zgłoś się tutaj</a>    
+                            </div>
+                        </div>
+                        <div class="btn--is-hidden-pricing-vocal">
+                            <a href="#cenaSukcesu" aria-label="Zwiń cennik" class="btn-pricing">Zwiń</a>
+                        </div>   
+                    </div>
+        
+                    <div id="pricingPiano" class="pricing-piano is-hidden">
+                        <div class="notes">
+                            <hr class="notes__line notes__line-1">
+                            <hr class="notes__line notes__line-2">
+                            <hr class="notes__line notes__line-3">
+                            <hr class="notes__line notes__line-4">
+                            <hr class="notes__line notes__line-5">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-1" alt="music note">
+                            <img src="assets/img/iconsNuty/cwiercnuta.png" class="notes__item notes__item-2" alt="music note">
+                            <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-3" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-4" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-5" alt="music note">
+                            <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-6" alt="music note">
+                            <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-7" alt="music note">
+                        </div>
+                        <div class="pricing__box">
+                            <div class="pricing__card">
+                                <div class="pricing__header">
+                                    <h2 class="pricing__title">Lekcja gry na pianinie 45 minut</h2>
+                                    <span class="price">80 zł</span>
+                                </div>
+                                <p class="pricing__text">Dedykowane dla początkujących i zaawansowanych. Lekcje prowadzone są przez Arka indywidualnie u nas w studio w Warszawie. Nauka odbywa się przy pomocy pianina o ważonej klawiaturze z uwzględnieniem pedalizacji (nie keyboard).</p>
+                                <a href="#kontakt" aria-label="Zapisz się na lekcję" class="btn-pricing">Zgłoś się tutaj</a>
+                            </div>
+                            <div class="pricing__card">
+                                <div class="pricing__header">
+                                    <h2 class="pricing__title">Pakiet 4 lekcji gry na pianinie po 45 minut</h2>
+                                    <span class="price">280 zł</span>
+                                </div>
+                                <p class="pricing__text">W abonamencie wychodzi taniej! Możesz wykupić od razu 4 lekcje i zyskać 40 zł. Lekcje prowadzone są przez Arka u nas w studio w Warszawie.</p>
+                                <a href="#kontakt" aria-label="Zapisz się na lekcję" class="btn-pricing">Zgłoś się tutaj</a>
+                            </div>
+                        </div>
+                        <div class="btn--is-hidden-pricing-piano">
+                            <a href="#cenaSukcesu" aria-label="Zwiń cennik" class="btn btn-white">Zwiń</a>
+                        </div>
+                    </div>     
+                </section>
+        
+                <section id="strefaArtystow">
+                    <div class="tab__header">
+                        <h2 class="tab__title">Strefa Artystów</h2>    
+                    </div>
+                    <div class="zone__container">
+                        <div class="zone">
+                            <div class="zone__box-icons">
+                                <a href="#emisja"><div class="zone__icon zone__icon1"></div></a>
+                                <a href="#estrada"><div class="zone__icon zone__icon2"></div></a>
+                                <a href="#egwiazda"><div class="zone__icon zone__icon3"></div></a>
+                                <a href="#czarnaStrefa"><div class="zone__icon zone__icon4"></div></a>
+                                <a href="#bialaStrefa"><div class="zone__icon zone__icon5"></div></a>
+                            </div> 
+                        </div>
+                        <a href="#zoneDescription"><div class="zone__box-arrow"><div class="zone__arrow"></div></div></a>
+                    </div>
+                    
+                    <div class="zone__content is-hidden">
+                        <div id="zoneDescription" class="zone__description">
+                            <p>Strefą artystów nazywamy wszystkie te działania, głównie na naszym kanale <a href="https://www.youtube.com/channel/UCYjQwGcp8EyRgPhXmID6_5w" target="_blank" rel="noreferrer" class="zone__description-link"><img src="assets/socialmediaicons/YouTubeIcon.svg" class="zone__description-icon">YouTube</a>, poprzez które chcemy promować twórczość własną oraz członków naszego studia jak również przekazywać szerszemu gronu wiedzę z zakresu wokalistyki. Podzieliliśmy je na kilka obszarów:</p>
+                        </div>
+
+                        <div class="zone__box">
+                            <div id="emisja"class="zone__card">
+                                <img src="assets/img/iconsStrefa/emisja.png" alt="emisja" class="zone__img">
+                                <div class="zone__text">
+                                    <h4 class="zone__titile">E-misja</h4>
+                                    <p>To miejsce na naszym kanale YouTube gdzie zamieszczane są wszelkie informacje dotyczące wokalistyki.  Część z materiałów będzie dostępna publicznie, ale dużo nagrań będzie skierowana tylko do uczniów naszego studio. Co tam znajdziesz? Potrzebne wskazówki oraz ćwiczenia wokalne.</p>
+                                </div>
+                                <a href="https://www.youtube.com/playlist?list=PLPj6MA1UPCd23qk9_IsJpnAk32g8sBU8S" target="_blank" rel="noreferrer" class="zone__icon-youtube"></a>
+                            </div>
+                            <div id="estrada" class="zone__card">
+                                <img src="assets/img/iconsStrefa/estrada.png" alt="estrada" class="zone__img">
+                                <div class="zone__text">
+                                    <h4 class="zone__titile">E-strada</h4>
+                                    <p>Twórcy – spotkasz tutaj artystów, którzy przyszli do nas, by zaprezentować swoją własną twórczość. Możesz być jednym z nich jeśli tylko zainwestujesz w swój rozwój odpowiednio dużo czasu.</p>
+                                </div>
+                                <a href="https://www.youtube.com/playlist?list=PLPj6MA1UPCd3j2CQhzYfHS_Y_TAr939H4" target="_blank" rel="noreferrer" class="zone__icon-youtube"></a>
+                            </div>
+                            <div id="egwiazda" class="zone__card">
+                                <img src="assets/img/iconsStrefa/egwiazda.png" alt="egwiazda" class="zone__img">
+                                <div class="zone__text">
+                                    <h4 class="zone__titile">E-gwiazda</h4>
+                                    <p>To miejsce, do którego zapraszane są gwiazdy polskiej estrady oraz świata musicalu. Każdy z Was będzie mógł inspirować się profesjonalistami, z niektórymi się spotkać, a może nawet wspólnie wykonać jakiś utwór!</p>
+                                </div>
+                                <a href="https://www.youtube.com/playlist?list=PLPj6MA1UPCd3UswZ2xKNEFqkbtQGAIHFC" target="_blank" rel="noreferrer" class="zone__icon-youtube"></a>
+                            </div>
+                            <div id="czarnaStrefa" class="zone__card">
+                                <img src="assets/img/iconsStrefa/czarnastrefa.png" alt="czarna strefa" class="zone__img">
+                                <div class="zone__text">
+                                    <h4 class="zone__titile">Czarna Strefa</h4>
+                                    <p>Strefa wodza. Ta przestrzeń jest zarezerwowana dla Arka. Znajdziecie tutaj różnego rodzaju covery, twórczość własną oraz inne cuda na kiju. A wszystko to, by pokazać Wam, jak można bawić się muzyką!</p>
+                                </div>
+                                <a href="https://www.youtube.com/playlist?list=PLPj6MA1UPCd37stJy-rPVw0gkHNWYnIue" target="_blank" rel="noreferrer" class="zone__icon-youtube"></a>
+                            </div>
+                            <div id="bialaStrefa" class="zone__card">
+                                <img src="assets/img/iconsStrefa/bialastrefa.png" alt="biała strefa" class="zone__img">
+                                <div class="zone__text">
+                                    <h4 class="zone__titile">Biała Strefa</h4>
+                                    <p>Miejsce szczególne, zarezerwowane dla naszych uczniów! To właśnie tutaj możecie podziwiać rozwój naszych podopiecznych. Nagrywanie - to jedna z dróg do prawidłowego rozwoju naszego głosu. Zobaczysz jak wiele aspektów nagle usłyszysz sam!</p>
+                                </div>
+                                <a href="https://www.youtube.com/playlist?list=PLPj6MA1UPCd28kp8SHl06mKlH9bt5QV4-" target="_blank" rel="noreferrer" class="zone__icon-youtube"></a>
+                            </div>
+                            <div class="btn--is-hidden-zone">
+                                <a href="#kontakt" aria-label="Zwiń strefę artystów" class="btn btn-white">Zwiń</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="odbierzPrezent" class="take-margin">
+                    <div class="tab__header">
+                        <h2 class="tab__title">Odbierz Prezent</h2>    
+                    </div>
+                    <div class="gift">
+                        <div class="gift__arrow"><p class="gift__text">kliknij</p></div>
+                        <a href="#gift" aria-label="Pokaz zakładkę odbierz prezent" class="btn-gift">
+                            <img src="assets/img/gift-128.png" alt="gift" class="gift__icon">
+                        </a>
+                    </div>
+    
+                    <div class="gift__box is-hidden" id="gift">
+                        <div class="ebook">
+                            <img class="ebook__img" src="assets/img/ebookcover.png" alt="e-book">
+                        </div>
+         
+                        <div class="ebook__text">
+                            <p>Hej! Super, że tutaj zajrzałaś/eś bo mamy dla Ciebie coś specjalnego - darmowy e-book! Naszą misją jest edukacja wokalna osób, którym zależy na tym, by śpiewać świadomie, zdrowo i w konsekwencji osiągać marzenia związane ze śpiewaniem.
+                            Jeśli masz podobne wartości to zakochasz się w tej książce!<br>
+                            <br>
+                                Przed Tobą ponad 20 stron praktycznych ćwiczeń i multimedialnych podpowiedzi z 6 trikami na opracowanie utworu, który chcesz zaśpiewać. Gdy wykonasz te ćwiczenia sam się zdziwisz jak szybko możesz poprawić swoje brzmienie.<br>
+                                <br>
+                                
+                                Chcemy Ci ten kawałek naszej wiedzy bezinteresownie podarować. 
+                                Uzupełnij formularz, a my w ciągu kilku godzin wyślemy Ci ten materiał.</p>
+                            <div>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdekncbcynpFMaV8HTOcW8miD-V7nwuxq4rO5pawrLYnrCGwA/viewform" aria-label="Przejdź na stronę formularza" target="_blank" rel="noreferrer" class="btn btn-orange">Odbierz E-booka</a>  
+                            </div>
+
+                            <div class="btn--is-hidden-gift">
+                                <a href="#kontakt" aria-label="Zwiń zakładkę odbierz prezent" class="btn btn-white">Zwiń</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+
+            <footer class="footer">
+                <section id="kontakt">
+                    <div class="tab__header">
+                        <h2 class="tab__title">Kontakt</h2>    
+                    </div>
+    
+                    <div class="footer__box">
+                        <div>
+                            <p>Skontaktuj się z nami, jeśli masz pytanie lub chcesz umówić się na lekcję indywidualną:</p>
+                            <div class="footer__mail">
+                                <img src="assets/socialmediaicons/email.png" alt="mail" class="footer__mail-icon"><a href="mailto:czarnonabialych@gmail.com" class="footer__mail-link">czarnonabialych@gmail.com</a>
+                            </div> 
+                            <div class="footer__phone">
+                                <img src="assets/socialmediaicons/phone.png" alt="phone" class="footer__phone-icon"><p class="footer__phone-number">880 954 505 Arek<br>608 809 332 Aneta</p>
+                            </div> 
+                        </div>
+    
+                    
+                        <div>
+                            <picture>
+                                <source srcset="assets/img/CNBL.webp" type="image/webp">
+                                <source srcset="assets/img/CNBL.png" type="image/png"> 
+                                <img src="assets/img/CNBL.png" class="footer__logo" alt="czarno na białych">
+                            </picture> 
+                            
+                        </div>
+                    </div>
+                    <div class="footer__box-icon">
+                        <a href="https://www.facebook.com/CzarnoNaBialych/" target="_blank" rel="noreferrer"><img src="assets/socialmediaicons/facebook-4-32.png" alt="facebook" class="footer__icon"></a>
+                        <a href="https://www.instagram.com/czarnonabialych_studio/" target="_blank" rel="noreferrer"><img src="assets/socialmediaicons/instagram-4-32.png" alt="instagram" class="footer__icon"></a>
+                        <a href="https://www.youtube.com/channel/UCYjQwGcp8EyRgPhXmID6_5w" target="_blank" rel="noreferrer"><img src="assets/socialmediaicons/youtube-4-32.png" alt="youtube" class="footer__icon"></a>
+                    </div>
+                    <div class="notes">
+                        <hr class="notes__line notes__line-1">
+                        <hr class="notes__line notes__line-2">
+                        <hr class="notes__line notes__line-3">
+                        <hr class="notes__line notes__line-4">
+                        <hr class="notes__line notes__line-5">
+                        <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-1" alt="music note">
+                        <img src="assets/img/iconsNuty/cwiercnuta.png" class="notes__item notes__item-2" alt="music note">
+                        <img src="assets/img/iconsNuty/szesnastka.png" class="notes__item notes__item-3" alt="music note">
+                        <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-4" alt="music note">
+                        <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-5" alt="music note">
+                        <img src="assets/img/iconsNuty/polnuta.png" class="notes__item notes__item-6" alt="music note">
+                        <img src="assets/img/iconsNuty/osemka.png" class="notes__item notes__item-7" alt="music note">
+                    </div>
+                    <span class="footer__copy"> 2020 &copy; Czarno Na Białych</span>
+                </section>
+            </footer>
+        </div>
+
+        <script src="script.js"></script> 
+           
+    </body>
+</html>
